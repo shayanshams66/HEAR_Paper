@@ -1,4 +1,4 @@
-# The code is a changed version of https://github.com/noboevbo/nobos_torch_lib/blob/master/nobos_torch_lib/datasets/action_recognition_datasets/ehpi_dataset.py
+# The code is a changed version of https://github.com/noboevbo/nobos_torch_lib
 
 import random
 import numpy as np
