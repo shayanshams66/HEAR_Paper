@@ -13,7 +13,7 @@ In our experiment, we use CUDA (v10) and CUDNN (v8) for paralleization.
  
  
 ## Data Availability
-We consider three datasets: J-HMDB, URFD, and Multicam. For each dataset, we used the [Deep High-Resolution network](https://arxiv.org/abs/1902.09212) for pose estimation.
+We consider three datasets: J-HMDB, URFD, and Multicam. For each dataset, we used the [Deep High-Resolution network](https://arxiv.org/abs/1902.09212) for pose estimation, and modified the [nobos torch lib](https://github.com/noboevbo/nobos_torch_lib) for data transformation, normalization, and frame selection. 
 
 The transformed samples from the three datasets are merged for analysis. The merged dataset is split randomly into training and testing sets that contain 70% (84 falls and 1346 non-falls) and 30% (29 falls and 579 non-falls), respectively. We modified the [Imbalanced Dataset Sampler](https://github.com/ufoym/imbalanced-dataset-sampler/) that can rebalance the class distributions and migigate overfitting over imbalanced datasets. 
 The training and testing data can be found in the `TrainAndTestData` folder. The directory tree should look like this:
